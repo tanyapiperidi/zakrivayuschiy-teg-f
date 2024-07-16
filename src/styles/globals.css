@@ -35,7 +35,14 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  cursor: pointer;
+  /* обнуление стилей */
+  text-transform: lowercase;
+  background: transparent;
+  border: none;
+  padding: 0;
 }
+
 
 ul,
 ol {

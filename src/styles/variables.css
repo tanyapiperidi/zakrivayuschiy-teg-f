@@ -1,0 +1,36 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  /* Шрифты */
+  --accent-font: 'Inter', sans-serif;
+  --second-accent-font: 'Press Start 2P', monospace;
+  /* Размер шрифта */
+  --main-font-size: 18px;
+  --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-text-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --button-font-size: 14px;
+  --decoration-text: 14px;
+  --dialog-text: 14px;
+  /* Толщина шрифта */
+  --header-font-weight: 400;
+  --button-font-weight: 400;
+  --dialog-font-weight: 400;
+  --main-title-font-weight: 785;
+  --main-text-font-weight: 465;
+  /* Основной цвет */
+  --accent-color: rgba(0, 204, 20, 1);
+  --second-accent-color: rgba(0, 0, 0, 1);
+  --floppy-color: rgba(0, 204, 20, 1);
+  --button__text-color: rgba(0, 204, 20, 1);
+  --svg-floppy-fill-color: rgba(0, 204, 20, 1);
+  --svg-heart-contour-color: rgba(0, 204, 20, 1);
+  --svg-heart-filling-color: rgba(255, 0, 0, 1);
+  --svg-heart-sparks-color: rgba(255, 0, 0, 1);
+  /* Фоновый градиент */
+  --background-gradient: repeating-linear-gradient(270deg, black 0 2px, transparent 2px 4px), repeating-linear-gradient(0deg, black 0 2px, transparent 0 4px), linear-gradient(to bottom, #007f0c, #004306);
+  /* Ширина блоков */
+  --inline-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+  /* Отступы */
+  --header-margin-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+
+}
