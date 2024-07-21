@@ -6,15 +6,25 @@
 */
 
 html.theme-dark {
-  /* Основной цвет */
-  --accent-color: rgba(0, 204, 20, 1);
-  --second-accent-color: rgba(0, 0, 0, 1);
-  --floppy-color: rgba(0, 204, 20, 1);
   /* Толщина шрифта */
   --main-title-font-weight: 785;
   --main-text-font-weight: 465;
+  /* Основной цвет */
+  --accent-color: rgb(0 204 20 / 1);
+  --second-color: rgb(0 0 0 / 1);
+  --button__text-color: rgb(0 204 20 / 1);
+  --svg-heart-active-filling-color: rgb(255 0 0 / 1);
+  --svg-heart-contour-color: rgb(0 204 20 / 1);
+  --svg-floppy-color: rgb(0 204 20 / 1);
+  --svg-floppy-fill-color: rgb(0 204 20 / 1);
   /* Фоновый градиент */
-  --background-gradient: repeating-linear-gradient(270deg, black 0 2px, transparent 2px 4px), repeating-linear-gradient(0deg, black 0 2px, transparent 0 4px), linear-gradient(to bottom, #007f0c, #004306);
+  --background-gradient: repeating-linear-gradient(
+      270deg,
+      black 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(0deg, black 0 2px, transparent 0 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
 }
 
 html.theme-light {
@@ -22,31 +32,42 @@ html.theme-light {
   --main-title-font-weight: 700;
   --main-text-font-weight: 400;
   /* Основной цвет */
-  --accent-color: rgba(0, 0, 0, 1);
-  --second-accent-color: rgba(255, 255, 255, 1);
-  --floppy-color: rgba(255, 255, 255, 1);
-  --button__text-color: rgba(255, 255, 255, 1);
-  --svg-floppy-fill-color: rgba(255, 255, 255, 1);
-  --svg-heart-contour-color: rgba(0, 0, 0, 1);
+  --accent-color: rgb(0 0 0 / 1);
+  --second-color: rgb(255 255 255 / 1);
+  --button__text-color: rgb(255 255 255 / 1);
+  --svg-floppy-color: rgb(255 255 255 / 1);
+  --svg-floppy-fill-color: rgb(255 255 255 / 1);
+  --svg-heart-contour-color: rgb(0 0 0 / 1);
   /* Фоновый градиент */
-  --background-gradient: repeating-linear-gradient(270deg, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 0 4px), linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  --background-gradient: repeating-linear-gradient(
+      270deg,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 0 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
 @media (prefers-color-scheme: light) {
-  
+
   :root {
     /* Толщина шрифта */
     --main-title-font-weight: 700;
     --main-text-font-weight: 400;
     /* Основной цвет */
-    --accent-color: rgba(0, 0, 0, 1);
-    --second-accent-color: rgba(255, 255, 255, 1);
-    --floppy-color: rgba(255, 255, 255, 1);
-    --button__text-color: rgba(255, 255, 255, 1);
-    --svg-floppy-fill-color: rgba(255, 255, 255, 1);
-    --svg-heart-contour-color: rgba(0, 0, 0, 1);
+    --accent-color: rgb(0 0 0 / 1);
+    --second-color: rgb(255 255 255 / 1);
+    --button__text-color: rgb(255 255 255 / 1);
+    --svg-floppy-color: rgb(255 255 255 / 1);
+    --svg-floppy-fill-color: rgb(255 255 255 / 1);
+    --svg-heart-contour-color: rgb(0 0 0 / 1);
     /* Фоновый градиент */
-    --background-gradient: repeating-linear-gradient(270deg, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 0 4px), linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-  
+    --background-gradient: repeating-linear-gradient(
+        270deg,
+        #d3d3d3 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 0 4px),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   }
 }

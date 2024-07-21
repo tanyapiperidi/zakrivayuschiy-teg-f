@@ -5,25 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
-    <link rel="icon" href="images/svg/favicon.svg" />
-    <!-- <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" /> -->
-    <link rel="stylesheet" href="/bundle.css" />
+    <link rel="icon" href="./svg/favicon.svg" />
+    <link rel="stylesheet" href="./bundle.css" />
     <script src="./scripts/set-theme.js"></script>
   </head>
-  <body class="page">
-    <header class="header">
-      <h1  class="header-title">&lt;/HTML&gt;</h1>
-      <p class="header-text">закрывающий тег</p>
+  <body class="page align-center">
+    <header class="header background align-center outline">
+      <h1 class="header-title">&lt;/HTML&gt;</h1>
+      <p class="header-text uppercase">закрывающий тег</p>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button button">
+            <button type="button" data-theme="dark" class="theme-menu__button position-relative button uppercase">
               Темно
             </button>
           </li>
@@ -32,13 +26,13 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button button"
+              class="theme-menu__button position-relative button uppercase"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button button">
+            <button type="button" data-theme="light" class="theme-menu__button position-relative button uppercase">
               Светло
             </button>
           </li>
@@ -46,39 +40,280 @@
       </nav>
     </header>
     <main class="main">
-      <section class="section">
-        <ul class="list">
-          <li class="list-item">
-            <article class="main-article">
+      <section>
+        <ul>
+          <li class="list-item background">
+            <article class="main-article outline">
               <h2 class="main-title">
-                Фритрек и нулевой спринт: Подготовка к работе
+                Фритрек и нулевой спринт: Подготовка&nbsp;к работе
               </h2>
-              <div class="wrapper">
+              <div class="wrapper position-relative outline">
                 <img
-                src="images/svg/furgon.svg"
-                alt="Фургон в стиле пиксель-арт, который вероятно используется как мобильное кафе или магазин. Фургон белого цвета с оранжевыми и фиолетовыми акцентами. В нем присутствует окно с оранжевыми занавесками и виднеется внутренний интерьер, что характерно для фургонов с продажей еды.
-              Фон сцене ретро-пейзаж в ночное время с темно-синим небом, звездами и облаками. Справа от фургона стоит деревянный столб с натянутыми проводами, что создает городской антураж."
-                class="card-image image"
+                src="./images/0Спринт.avif"
+                alt="Абстрактная 3D-модель, составленная из множества прозрачных и полупрозрачных прямоугольных параллелепипедов разного размера и цвета. Модель представляет собой композицию, напоминающую сложный куб с различными вырезами и вставками. Основные цвета фигур — оттенки синего и голубого, с добавлением фиолетового и белого. Некоторые элементы выглядят более насыщенными, другие — почти прозрачными. Форма конструкции напоминает многослойную абстракцию с пересекающимися объектами в трехмерном пространстве. Общий фон изображения светлый, что подчеркивает прозрачность и свечение фигур."
+                class="card-image saturate image"
               />
-              <span class="decoration">&lt;/HTML&gt;</span>
+              <span class="decoration">&lt;/easy&gt;</span>
               </div>
               <p class="main-text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
               <p class="main-text">
-                Место для ваших воспоминаний о начале обучения.
+                Если честно не знаю что писать т.к моя память 16 мегабайт
               </p>
-              <div class="wrapper_flex">
+              <div class="wrapper_flex align-center">
                 <buttton type="button"  tabindex="0" class="main__button-heart button card__icon-button">
-
-                  <svg width="35" height="36" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                  <svg width="39" height="36" xmlns="http://www.w3.org/2000/svg" class="like-icon">
                     <g class="heart">  
-                    <path class="contour" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" fill="var(--svg-heart-contour-color)"/>
-                    <path class="main-body" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" fill="transparent"/>
-                    <path class="core" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" fill="transparent"/>
+                    <path class="contour" fill="var(--svg-heart-contour-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                    <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                    <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
                     </g>
-                    <path class="sparks" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" fill="var(--svg-heart-sparks-color)"/>
+                    <path class="sparks" fill="rgba(255, 0, 0, 1)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
                     </svg>
                 </buttton>
-                <button type="button" class="main__button-text button button_shadows card__like-button">
+                <button type="button" class="main__button-text border position-relative align-center button button_shadows card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="list-item background">
+            <article class="main-article outline">
+              <h2 class="main-title">
+                1 спринт: Я — чистый лист
+              </h2>
+              <div class="wrapper position-relative outline">
+                <img
+                src="./images/1Спринт.avif"
+                alt="Два кратера на темной поверхности, которые выглядят, как вулканические структуры. Верхний кратер имеет округлую форму и находится чуть выше по сравнению с другим. Поверхность вокруг кратеров темно-серая, почти черная, что создает впечатление застывшей лавы или пепла. Края кратеров окрашены в оранжевый и красноватый оттенки, создавая эффект высоких температур в прошлом. Контраст между темной поверхностью и яркими краями кратеров подчеркивает их глубину и текстуру.
+                "
+                class="card-image blur image"
+              />
+              <span class="decoration">&lt;easily&gt;</span>
+              </div>
+              <p class="main-text">На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?</p>
+              <p class="main-text">
+                Если честно не знаю что писать т.к моя память 16 мегабайт
+              </p>
+              <div class="wrapper_flex align-center">
+                <buttton type="button"  tabindex="0" class="main__button-heart button card__icon-button">
+                  <svg width="39" height="36" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                    <g class="heart">  
+                    <path class="contour" fill="var(--svg-heart-contour-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                    <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                    <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                    </g>
+                    <path class="sparks" fill="rgba(255, 0, 0, 1)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
+                    </svg>
+                </buttton>
+                <button type="button" class="main__button-text border position-relative align-center button button_shadows card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="list-item background">
+            <article class="main-article outline">
+              <h2 class="main-title">
+                1 спринт: А если не получится?
+              </h2>
+              <div class="wrapper position-relative outline">
+                <img
+                src="./images/1.Спринт.avif"
+                alt="Настенный светильник с двумя лампочками, оформленный в классическом стиле. Светильник имеет сложные декоративные элементы, такие как лепнина и растительные узоры. Абажуры белого цвета, и они напоминают колокольчики.
+                Светильник закреплен на стене, которая покрыта обоями с изысканным и детализированным узором в виде сложных завитков и восточных мотивов. Обои имеют преимущественно серый и золотистый оттенки, что придает изображению элегантности и утончённости. Общее впечатление — ретро или винтажный шик."
+                class="card-image sepia image"
+              />
+              <span class="decoration uppercase">&lt;gladness&gt;</span>
+              </div>
+              <p class="main-text">Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
+              <p class="main-text">
+                Если честно не знаю что писать т.к моя память 16 мегабайт
+              </p>
+              <div class="wrapper_flex align-center">
+                <buttton type="button"  tabindex="0" class="main__button-heart button card__icon-button">
+                  <svg width="39" height="36" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                    <g class="heart">  
+                    <path class="contour" fill="var(--svg-heart-contour-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                    <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                    <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                    </g>
+                    <path class="sparks" fill="rgba(255, 0, 0, 1)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
+                    </svg>
+                </buttton>
+                <button type="button" class="main__button-text border position-relative align-center button button_shadows card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="list-item background">
+            <article class="main-article outline">
+              <h2 class="main-title">
+                2 спринт: Погоня за идеалом
+              </h2>
+              <div class="wrapper position-relative outline">
+                <img
+                src="./images/2Спринт.avif"
+                alt="Цветок, выполненный в негативе. Преобладают насыщенные бирюзово-зеленые оттенки, что особенно заметно на лепестках цветка. Листья, окружающие цветок, окрашены в светлые, почти белые тона с легкой пурпурной и серой тенью. Фон изображения выглядит размытым, на котором также видны яркие бирюзово-зеленые пятна, что, вероятно, являются другими цветами или частями растений. Общий эффект изображения создаёт необычную и несколько сюрреалистическую атмосферу."
+                class="card-image invert image"
+              />
+              <span class="decoration uppercase">&lt;easy&gt;</span>
+              </div>
+              <p class="main-text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
+              <p class="main-text">
+                Если честно не знаю что писать т.к моя память 16 мегабайт
+              </p>
+              <div class="wrapper_flex align-center">
+                <buttton type="button"  tabindex="0" class="main__button-heart button card__icon-button">
+                  <svg width="39" height="36" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                    <g class="heart">  
+                    <path class="contour" fill="var(--svg-heart-contour-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                    <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                    <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                    </g>
+                    <path class="sparks" fill="rgba(255, 0, 0, 1)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
+                    </svg>
+                </buttton>
+                <button type="button" class="main__button-text border position-relative align-center button button_shadows card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="list-item background">
+            <article class="main-article outline">
+              <h2 class="main-title">
+                2 спринт: О тех, кто рядом
+              </h2>
+              <div class="wrapper position-relative outline">
+                <img
+                src="./images/2.Спринт.avif"
+                alt="Текстура, напоминающая потрескавшуюся поверхность, выполненную в различных оттенках синего и голубого. Верхняя часть изображения характеризуется более насыщенным синим цветом с заметной сеткой трещин, создающих эффект мозаики. В средней и нижней частях появляются более светлые тона голубого и белого цветов, плавно переходящие друг в друга, и также просматриваются трещины, но они менее плотные по сравнению с верхней частью изображения. В целом, картина производит впечатление абстрактного произведения искусства, напоминающего своим видом лед или воду в движении."
+                class="card-image multiple-filter image"
+              />
+              <span class="decoration uppercase">&lt;power&gt;</span>
+              </div>
+              <p class="main-text">Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, не правда ли?</p>
+              <p class="main-text">
+                Если честно не знаю что писать т.к моя память 16 мегабайт
+              </p>
+              <div class="wrapper_flex align-center">
+                <buttton type="button"  tabindex="0" class="main__button-heart button card__icon-button">
+                  <svg width="39" height="36" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                    <g class="heart">  
+                    <path class="contour" fill="var(--svg-heart-contour-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                    <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                    <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                    </g>
+                    <path class="sparks" fill="rgba(255, 0, 0, 1)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
+                    </svg>
+                </buttton>
+                <button type="button" class="main__button-text border position-relative align-center button button_shadows card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="list-item background">
+            <article class="main-article outline">
+              <h2 class="main-title">
+                3 спринт: Обходные стратегии
+              </h2>
+              <div class="wrapper position-relative outline">
+                <img
+                src="./images/3Спринт.avif"
+                alt="Природная сцена с фокусом на траве. В центре кадра выделяются несколько тонких, высоких стеблей с мелкими зелёными листьями или соцветиями. Фон картинки сильно размытый, что создаёт мягкую, спокойную атмосферу. Фото залито зелёным цветом, с правой стороны присутствует яркий источник света, который придаёт изображению настроение раннего утра или заката. Трава и растения, находящиеся на переднем плане, освещены красиво рассеивающимся светом, что добавляет шарм кадру."
+                class="card-image hue image"
+              />
+              <span class="decoration">&lt;fatigue&gt;</span>
+              </div>
+              <p class="main-text">На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
+              <p class="main-text">
+                Если честно не знаю что писать т.к моя память 16 мегабайт
+              </p>
+              <div class="wrapper_flex align-center">
+                <buttton type="button"  tabindex="0" class="main__button-heart button card__icon-button">
+                  <svg width="39" height="36" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                    <g class="heart">  
+                    <path class="contour" fill="var(--svg-heart-contour-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                    <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                    <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                    </g>
+                    <path class="sparks" fill="rgba(255, 0, 0, 1)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
+                    </svg>
+                </buttton>
+                <button type="button" class="main__button-text border position-relative align-center button button_shadows card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="list-item background">
+            <article class="main-article outline">
+              <h2 class="main-title">
+                3 спринт: Когда опускаются руки
+              </h2>
+              <div class="wrapper position-relative outline">
+                <img
+                src="./images/3.Спринт.avif"
+                alt="Живописный пейзаж, вероятно, на закате. Основной элемент композиции — это спокойная река, которая простирается через центр изображения, отражая в своей глади свет солнца и облака. Солнечный диск находится у горизонта, освещая окружающий ландшафт теплым оранжево-желтым светом.
+                Берега реки густо заросли зеленью и цветами, среди которых можно заметить розовые и белые соцветия. С обеих сторон реки растут деревья, создавая природный коридор, через который пробивается свет заходящего солнца.
+                Небо украшено эффектными облаками, которые на закате приобрели красивый оттенок от золотистого до мягкого розового, переходящего в голубизну.
+                На переднем плане в правой части виден деревянный мосток или настил, ведущий к реке. Этот элемент добавляет кадру уюта и гармонично вписывается в общий природный антураж."
+                class="card-image saturate image"
+              />
+              <span class="decoration uppercase">&lt;strange&gt;</span>
+              </div>
+              <p class="main-text">Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
+              <p class="main-text">
+                Если честно не знаю что писать т.к моя память 16 мегабайт
+              </p>
+              <div class="wrapper_flex align-center">
+                <buttton type="button"  tabindex="0" class="main__button-heart button card__icon-button">
+                  <svg width="39" height="36" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                    <g class="heart">  
+                    <path class="contour" fill="var(--svg-heart-contour-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                    <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                    <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                    </g>
+                    <path class="sparks" fill="rgba(255, 0, 0, 1)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
+                    </svg>
+                </buttton>
+                <button type="button" class="main__button-text border position-relative align-center button button_shadows card__like-button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="list-item background">
+            <article class="main-article outline">
+              <h2 class="main-title">
+                «Сейчас я здесь»
+              </h2>
+              <div class="wrapper position-relative outline">
+                <img
+                src="./images/Здесь.avif"
+                alt="Интерьер старинного здания, которое выглядит как мечеть или архитектурное строение, построенное в исламском стиле. Отличительная черта этого изображения — яркий свет, проникающий через арочный вход и создающий длинную светлую дорожку на темном полу. В дверном проеме виден силуэт человека, идущего по направлению к яркому свету. Сверху можно заметить архитектурные детали, такие как резные арки и стрельчатые окна с решетками. Цветовая палитра изображения преимущественно темная с ярко-желтым световым акцентом."
+                class="card-image brightness image"
+              />
+              <span class="decoration">&lt;complex&gt;</span>
+              </div>
+              <p class="main-text">Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат..</p>
+              <p class="main-text">
+                Я молодец и все
+              </p>
+              <div class="wrapper_flex align-center">
+                <buttton type="button"  tabindex="0" class="main__button-heart button card__icon-button">
+                  <svg width="39" height="36" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                    <g class="heart">  
+                    <path class="contour" fill="var(--svg-heart-contour-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
+                    <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
+                    <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
+                    </g>
+                    <path class="sparks" fill="rgba(255, 0, 0, 1)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
+                    </svg>
+                </buttton>
+                <button type="button" class="main__button-text border position-relative align-center button button_shadows card__like-button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -88,21 +323,21 @@
       </section>
     </main>
     <footer class="footer">
-      <button type="button" class="button footer-button button_shadows" onclick="window['dialog'].showModal()" aria-controls="dialog">
-      <svg viewBox="0 0 40 40" class="svg_floppy">
-        <use href="images/svg/floppy.svg#disk">
+      <button type="button" class="button footer-button background border position-relative align-center button_shadows" onclick="window['dialog'].showModal()" aria-controls="dialog">
+      <svg class="footer__button-svg" viewBox="0 0 40 40">
+        <use href="./svg/floppy.svg#disk">
       </svg>
       <span class="button__text">Сохранить на память</span>
     </button>
-    <dialog class="dialog" id="dialog">
-    <div class="dialog-wrapper">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" class="svg_floppy dialog-svg_floppy">
-        <path fill="var(--floppy-color)" d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"/>
+    <dialog class="dialog background outline" id="dialog">
+    <div class="dialog-wrapper align-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="39px" height="39px" class="dialog-svg_floppy">
+        <path fill="var(--accent-color)" d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"/>
         </svg>
-       <span class="dialog__button-text">Вставьте дискету,&nbsp;чтобы продолжить</span>
+       <span class="dialog-text uppercase">Вставьте дискету,&nbsp;чтобы продолжить</span>
     </div>
-      <button type="button" onclick="window['dialog'].close()" class="dialog-button button button_shadows">
-        <span class="button__text">ок</span>
+      <button type="button" onclick="window['dialog'].close()" class="dialog-button border border position-relative button button_shadows">
+        <span class="button__text uppercase">ок</span>
       </button>
   </dialog> 
     </footer>

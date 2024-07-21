@@ -1,5 +1,4 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
+/* 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
@@ -23,28 +22,35 @@
   background-image: var(--background-gradient);
   background-size: cover;
   color: var(--accent-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-family: var(--accent-font);
   font-size: var(--main-font-size);
   font-variation-settings: 'wdth' var(--main-text-font-weight);
+}
+
+.page,
+.header {
+  flex-direction: column;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
 }
 
 .header {
   block-size: clamp(20.1875rem, 19.2852rem + 3.8498vw, 22.75rem);
   inline-size: var(--inline-size);
   margin-block-start: 102px;
-  outline: 2px solid var(--accent-color);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: var(--second-accent-font);
-  font-weight: var(--header-font-weight);
+  font-family: var(--header-and-button-font);
+  font-weight: var(--header-and-button-and-decoration-font-weight);
 }
 
-.header, .main, .footer-button {
-  background-color: var(--second-accent-color);
+.background {
+  background-color: var(--second-color);
+}
+
+.outline {
+  outline: 2px solid var(--accent-color);
 }
 
 .header-title {
@@ -55,46 +61,36 @@
 
 .header-text {
   font-size: var(--header-text-font-size);
-  text-transform: uppercase;
   margin-block-start: 20px;
   font-weight: inherit;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .header__theme-menu {
-  margin-block: 23px;
+  margin: 21.5px 0 25px;
 }
 
 .theme-menu__item:not(:first-child) {
   margin-block-start: 10px;
 }
 
-.button {
-  font-size: var(--button-font-size);
-  font-family: var(--second-accent-font);
-  font-weight: var(--button-font-weight);
-}
-
-button:focus {
-  outline: none;
-}
-
 .theme-menu__button {
-  text-transform: uppercase;
   transition: opacity 0.3s ease;
-  position: relative;
   padding-inline-start: 20px;
 }
 
-.theme-menu__button:hover, .theme-menu__button:focus-visible {
+.theme-menu__button:hover,
+.theme-menu__button:focus-visible,
+.theme-menu__button:disabled,
+.theme-menu__button:disabled::before {
   opacity: 0.6;
 }
 
-.theme-menu__button:focus-visible {
-  outline: none;
-}
-
 .theme-menu__button::after {
-  content: "";
+  content: '';
   block-size: 1px;
   background-color: var(--accent-color);
   position: absolute;
@@ -106,24 +102,40 @@ button:focus {
   transform-origin: 0 0;
 }
 
-.theme-menu__button:focus-visible::after {
+.theme-menu__button:focus-visible::after,
+.main__button-text:hover::before,
+.footer-button:hover::before,
+.dialog-button:hover::before {
   transform: scaleX(1);
 }
 
 .theme-menu__button:disabled {
-  opacity: 0.6;
   pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
-  content: "▶";
+  content: '▶';
   inline-size: 14px;
   block-size: 14px;
   color: currentColor;
-  opacity: 0.6;
   position: absolute;
   left: 0;
   animation: theme-menu_arrow alternate 0.5s ease-in-out infinite;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.button {
+  font-size: var(--header-and-button-and-decoration-font-size);
+  font-family: var(--header-and-button-font);
+  font-weight: var(--header-and-button-and-decoration-font-weight);
+}
+
+button:focus,
+.button:focus-visible {
+  outline: none;
 }
 
 /* ---------- Основа ---------- */
@@ -133,8 +145,8 @@ button:focus {
   margin-block-start: 105px;
 }
 
-.list-item, .wrapper {
-  outline: 2px solid var(--accent-color);
+.list-item:not(:last-child) {
+  margin-block-end: 53px;
 }
 
 .main-article {
@@ -144,116 +156,120 @@ button:focus {
 .main-title {
   font-weight: var(--main-title-font-weight);
   font-size: inherit;
-}
-
-.main-title:first-child {
-  padding: 4px 10px 6px;
+  padding: 3px 0 8px 10px;
 }
 
 .wrapper {
-  position: relative;
   block-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
 }
 
-.card-image {
+.image {
   inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+/* Фильтры для картинок */
+
+.saturate {
+  filter: saturate(2);
+}
+
+.blur {
+  filter: blur(1px);
+}
+
+.sepia {
+  filter: sepia(1);
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.multiple-filter {
+  filter: invert(1) saturate(2);
+}
+
+.hue {
+  filter: hue-rotate(73deg);
+}
+
+.brightness {
+  filter: brightness(0.5);
 }
 
 .decoration {
-  font-size: 14px;
+  font-size: var(--header-and-button-and-decoration-font-size);
   position: absolute;
   right: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
   top: 25px;
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  font-family: var(--second-accent-font);
-  text-shadow:
-    -1px 0 var(--second-accent-color), 
-   0 1px var(--second-accent-color), 
-   1px 0 var(--second-accent-color), 
-   0 -1px var(--second-accent-color);
+  font-family: var(--header-and-button-font);
+  text-shadow: -1px 0 var(--second-color), 0 1px var(--second-color),
+    1px 0 var(--second-color), 0 -1px var(--second-color);
 }
 
-@supports((text-stroke: 0.5px var(--second-accent-color)) or (-webkit-text-stroke: 0.5px var(--second-accent-color))) {
+@supports (
+  (text-stroke: 0.5px var(--second-color)) or
+    (-webkit-text-stroke: 0.5px var(--second-color))
+) {
 
   .decoration {
-        -webkit-text-stroke: 0.5px var(--second-accent-color);
-        text-stroke: 0.5px var(--second-accent-color);
-        text-shadow: none;
-    }
-} 
+    -webkit-text-stroke: 0.5px var(--second-color);
+    text-stroke: 0.5px var(--second-color);
+    text-shadow: none;
+  }
+}
 
 .main-text {
-  font-weight: var(--main-text-font-weight);
   margin: 27px 25px 0;
 }
 
 .wrapper_flex {
-  display: flex;
   justify-content: flex-end;
   margin: 25px 25px 0 0;
-  align-items: center;
 }
 
-/* Кнопка с сердцем */
+/* Кнопка сердце */
 
 .main__button-heart {
   inline-size: 39px;
-  block-size: 38px;
+  block-size: 36px;
   transition: 0.3s ease;
   margin-inline-end: 7px;
-  border: 2px solid transparent;
   cursor: pointer;
 }
 
-
-
-/* Наведение на сердце */
-
-.core {
-  transition: fill 0.3s 0s;
+.main__button-heart:focus-visible {
+  outline: 2px solid var(--accent-color);
 }
 
-.like-icon:not(:hover) .core {
-  transition-delay: 0.03s;
-}
-
-.main-body {
-  transition-delay: 0.05s;
-  transition-duration: 0.3s;
-}
-
-.contour {
-  transition: 0.3s 0.06s;
-}
-
-.like-icon:not(:hover) .main-body{
-  transition-duration: 0.3s;
-  transition-delay: 0s;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.like-icon:hover .core, .like-icon:hover .main-body {
+.like-icon:hover .core {
+  transition: fill 0.3s;
   fill: var(--accent-color);
 }
 
-/* Активное состояние на сердце */
-
-.like-icon:active .core, .like-icon:active .main-body, .like-icon.is-liked .contour, .like-icon.is-liked .core, .like-icon.is-liked .main-body {
-  fill: var(--svg-heart-filling-color);
+.like-icon:active .core {
+  transition: fill 0.3s;
 }
-
-/* При повявлении класса .is-liked*/
 
 .like-icon.is-liked .core {
   transition: fill 0.3s 0s;
 }
 
+.like-icon:hover .main-body {
+  transition: fill 0.3s 0.05s;
+  fill: var(--accent-color);
+}
+
+.like-icon:active .main-body {
+  transition: fill 0.3s 0.05s;
+}
+
 .like-icon.is-liked .main-body {
-  transition: 0.3s 0.05s;
+  transition: fill 0.3s 0.05s;
 }
 
 .like-icon.is-liked .contour {
@@ -269,27 +285,42 @@ button:focus {
   animation: heart_sparks 0.3s ease-in 0.3s alternate 2;
 }
 
-.main__button-heart:focus {
-  outline: none;
+.like-icon:active .core,
+.like-icon:active .main-body,
+.like-icon.is-liked .contour,
+.like-icon.is-liked .core,
+.like-icon.is-liked .main-body {
+  fill: var(--svg-heart-active-filling-color);
 }
 
-.main__button-heart:focus-visible {
-  border: 2px solid var(--accent-color);
-  outline: none;
+.core {
+  transition: fill 0.3s 0.03s;
 }
 
+.main-body {
+  transition: fill 0.3s;
+}
 
+.contour {
+  transition: fill 0.1s;
+}
+
+.sparks {
+  opacity: 0;
+}
 
 /* Кнопка like */
 
-.main__button-text, .footer-button, .dialog-button {
-  border: 2px solid var(--accent-color);
-  position: relative;
-  user-select: none
+.main__button-text,
+.footer-button,
+.dialog-button {
+  user-select: none;
 }
 
-.main__button-text::before, .footer-button::before, .dialog-button::before {
-  content: "";
+.main__button-text::before,
+.footer-button::before,
+.dialog-button::before {
+  content: '';
   inline-size: 100%;
   block-size: 100%;
   transform: scaleX(0);
@@ -301,26 +332,22 @@ button:focus {
   background-color: var(--accent-color);
 }
 
-.main__button-text:hover::before, .footer-button:hover::before, .dialog-button:hover::before {
-  transform: scaleX(1);
-}
-
 .main__button-text {
   inline-size: 130px;
-  block-size: 38px;
-  display: flex;
-  align-items: center;
+  block-size: 40px;
   justify-content: center;
 }
 
+.border {
+  border: 2px solid var(--accent-color);
+}
+
 .button_shadows:focus-visible {
-  outline: none;
   box-shadow: 2px 2px 0 0 var(--accent-color);
   transition: 0.3s ease;
 }
 
 .button__text {
-  text-transform: none;
   mix-blend-mode: difference;
   color: var(--button__text-color);
 }
@@ -329,44 +356,43 @@ button:focus {
 
 .footer {
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
-  block-size: 55px;
-  margin-block-start: 52px;
 }
 
 .footer-button {
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  margin-block-start: 52px;
   margin-block-end: clamp(6.25rem, 6.14rem + 0.4695vw, 6.5625rem);
-  block-size: 55px;
-  display: flex;
+  block-size: var(--footer-button-block-size);
   justify-content: center;
-    align-items: center;
+  padding: var(--footer-button-padding);
 }
 
-.svg_floppy {
-  inline-size: 21px;
-  block-size: 21px;
+.footer__button-svg {
+  inline-size: var(--svg-floppy-size);
+  block-size: var(--svg-floppy-size);
   mix-blend-mode: difference;
-  margin-inline-end: 8px;
+  margin-block-end: var(--footer__button-svg-margin-block-end);
+  margin-inline-end: var(--footer__button-svg-margin-inline-end);
 }
+
+/* Окно диалог */
 
 .dialog {
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   block-size: 191px;
-  outline: 2px solid var(--accent-color);
-  padding: 30px;
+  padding: var(--dialog-padding);
   border: none;
   color: var(--accent-color);
-  background-color: var(--second-accent-color);
+  font-family: var(--header-and-button-font);
+  font-weight: var(--header-and-button-and-decoration-font-weight);
+  font-size: var(--header-and-button-and-decoration-font-size);
 }
 
 .dialog::backdrop {
   background-color: rgb(0 0 0 / 0.7);
-  /* backdrop-filter: blur(2px); */
 }
 
 .dialog-wrapper {
-  display: flex;
-  align-items: center;
   margin-block-end: 30px;
 }
 
@@ -374,22 +400,35 @@ button:focus {
   inline-size: 39px;
   block-size: 39px;
   margin-inline-end: 20px;
+  margin-block-end: var(--dialog-svg_floppy-margin-block-end);
 }
 
-.dialog__button-text {
-  text-transform: uppercase;
-  color: var(--accent-color);
+.dialog-text {
   display: inline-block;
   block-size: 63px;
-  font-size: var(--dialog-text);
-  font-weight: var(--dialog-font-weight);
   line-height: 21px;
-  font-family: var(--second-accent-font);
   inline-size: clamp(12.375rem, 11.5827rem + 3.3803vw, 14.625rem);
 }
 
 .dialog-button {
   inline-size: clamp(16.0625rem, 15.2702rem + 3.3803vw, 18.3125rem);
   block-size: 38px;
-  border: 2px solid var(--accent-color);
+}
+
+@media (min-width: 375px) and (max-width: 565px) {
+
+  :root {
+    --footer-button-block-size: 82px;
+    --svg-floppy-size: 29px;
+    --footer__button-svg-margin-inline-end: 0;
+    --footer__button-svg-margin-block-end: 7px;
+    --footer-button-padding: 15px 18px;
+    --dialog-padding: 30px 42px;
+    --dialog-svg_floppy-margin-block-end: 0;
+  }
+
+  .footer-button {
+    display: flex;
+    flex-direction: column;
+  }
 }

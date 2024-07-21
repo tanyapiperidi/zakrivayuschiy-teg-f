@@ -29,7 +29,7 @@ function css() {
 
 function images() {
   return gulp.src('src/**/*.{jpg,png,svg,gif,ico,webp,avif}', { encoding: false })
-    .pipe(gulp.dest('dist/images'))
+    .pipe(gulp.dest('dist/'))
     .pipe(browserSync.reload({stream: true}));
 }
 
@@ -52,7 +52,7 @@ function clean() {
 function watchFiles() {
   gulp.watch(['src/**/*.html'], html);
   gulp.watch(['src/fonts/fonts.css', 'src/styles/globals.css', 'src/styles/variables.css', 'src/styles/style.css', 'src/styles/animations.css', 'src/styles/themes.css'], css);
-  gulp.watch(['src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images)
+  gulp.watch(['src/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images)
   gulp.watch(['src/**/*.{woff,woff2}'], fonts);
   gulp.watch(['src/scripts/**/*.js'], script);
 }
