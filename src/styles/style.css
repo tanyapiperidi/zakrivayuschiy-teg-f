@@ -53,16 +53,18 @@
   outline: 2px solid var(--accent-color);
 }
 
-.header-title {
-  font-size: var(--header-title-font-size);
-  margin-block-start: var(--header-margin-top);
+.header-decoration {
+  font-size: var(--header-decoration-font-size);
+  margin-block-start: var(--header-margin-block-start);
   font-weight: inherit;
+  line-height: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
-.header-text {
-  font-size: var(--header-text-font-size);
+.header-title {
+  font-size: var(--header-title-font-size);
   margin-block-start: 20px;
   font-weight: inherit;
+  line-height: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
 .uppercase {
@@ -80,6 +82,7 @@
 .theme-menu__button {
   transition: opacity 0.3s ease;
   padding-inline-start: 20px;
+  line-height: 14px;
 }
 
 .theme-menu__button:hover,
@@ -91,7 +94,7 @@
 
 .theme-menu__button::after {
   content: '';
-  block-size: 1px;
+  block-size: 2px;
   background-color: var(--accent-color);
   position: absolute;
   inline-size: -webkit-fill-available;
@@ -104,7 +107,7 @@
 
 .theme-menu__button:focus-visible::after,
 .main__button-text:hover::before,
-.footer-button:hover::before,
+.footer__button:hover::before,
 .dialog-button:hover::before {
   transform: scaleX(1);
 }
@@ -133,7 +136,7 @@
   font-weight: var(--header-and-button-and-decoration-font-weight);
 }
 
-button:focus,
+.button:focus,
 .button:focus-visible {
   outline: none;
 }
@@ -145,21 +148,17 @@ button:focus,
   margin-block-start: 105px;
 }
 
-.list-item:not(:last-child) {
+.main__card:not(:last-child) {
   margin-block-end: 53px;
 }
 
-.main-article {
-  padding-block-end: 25px;
-}
-
-.main-title {
+.card__title {
   font-weight: var(--main-title-font-weight);
   font-size: inherit;
   padding: 3px 0 8px 10px;
 }
 
-.wrapper {
+.card__figure {
   block-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
 }
 
@@ -223,18 +222,23 @@ button:focus,
   }
 }
 
-.main-text {
-  margin: 27px 25px 0;
+.card__wrapper-text-and-button {
+  padding: 25px;
+  display: grid;
+  gap: 26px;
 }
 
-.wrapper_flex {
+.card__text {
+  line-height: 21px;
+}
+
+.card__wrapper-button {
   justify-content: flex-end;
-  margin: 25px 25px 0 0;
 }
 
 /* Кнопка сердце */
 
-.main__button-heart {
+.card__button-heart {
   inline-size: 39px;
   block-size: 36px;
   transition: 0.3s ease;
@@ -242,8 +246,24 @@ button:focus,
   cursor: pointer;
 }
 
-.main__button-heart:focus-visible {
+.card__button-heart:focus-visible {
   outline: 2px solid var(--accent-color);
+}
+
+.core {
+  transition: fill 0.3s 0.03s;
+}
+
+.main-body {
+  transition: fill 0.3s;
+}
+
+.contour {
+  transition: fill 0.1s;
+}
+
+.sparks {
+  opacity: 0;
 }
 
 .like-icon:hover .core {
@@ -277,7 +297,7 @@ button:focus,
 }
 
 .like-icon.is-liked .heart {
-  animation: heart_scale 0.3s ease-in 0.1s alternate 2;
+  animation: heart_scale 0.3s ease-in 0.1s;
   transform-origin: center;
 }
 
@@ -293,32 +313,16 @@ button:focus,
   fill: var(--svg-heart-active-filling-color);
 }
 
-.core {
-  transition: fill 0.3s 0.03s;
-}
-
-.main-body {
-  transition: fill 0.3s;
-}
-
-.contour {
-  transition: fill 0.1s;
-}
-
-.sparks {
-  opacity: 0;
-}
-
 /* Кнопка like */
 
 .main__button-text,
-.footer-button,
+.footer__button,
 .dialog-button {
   user-select: none;
 }
 
 .main__button-text::before,
-.footer-button::before,
+.footer__button::before,
 .dialog-button::before {
   content: '';
   inline-size: 100%;
@@ -350,6 +354,7 @@ button:focus,
 .button__text {
   mix-blend-mode: difference;
   color: var(--button__text-color);
+  line-height: 12.6px;
 }
 
 /* ---------- Подвал ---------- */
@@ -358,7 +363,7 @@ button:focus,
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
 }
 
-.footer-button {
+.footer__button {
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   margin-block-start: 52px;
   margin-block-end: clamp(6.25rem, 6.14rem + 0.4695vw, 6.5625rem);
@@ -400,7 +405,6 @@ button:focus,
   inline-size: 39px;
   block-size: 39px;
   margin-inline-end: 20px;
-  margin-block-end: var(--dialog-svg_floppy-margin-block-end);
 }
 
 .dialog-text {
@@ -415,19 +419,9 @@ button:focus,
   block-size: 38px;
 }
 
-@media (min-width: 375px) and (max-width: 565px) {
+@media (width <= 375px) {
 
-  :root {
-    --footer-button-block-size: 82px;
-    --svg-floppy-size: 29px;
-    --footer__button-svg-margin-inline-end: 0;
-    --footer__button-svg-margin-block-end: 7px;
-    --footer-button-padding: 15px 18px;
-    --dialog-padding: 30px 42px;
-    --dialog-svg_floppy-margin-block-end: 0;
-  }
-
-  .footer-button {
+  .footer__button {
     display: flex;
     flex-direction: column;
   }

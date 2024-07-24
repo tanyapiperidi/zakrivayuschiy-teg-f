@@ -4,8 +4,12 @@
   --header-and-button-font: 'Press Start 2P', monospace;
   /* Размер шрифта */
   --main-font-size: 18px;
-  --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  --header-text-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --header-decoration-font-size: clamp(
+    3.0625rem,
+    2.7104rem + 1.5023vw,
+    4.0625rem
+  );
+  --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --header-and-button-and-decoration-font-size: 14px;
   /* Размер svg */
   --svg-floppy-size: 21px;
@@ -33,10 +37,23 @@
   --inline-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
   --footer-button-block-size: 55px;
   /* Отступы */
-  --header-margin-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  --header-margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   --footer__button-svg-margin-inline-end: 8px;
   --footer__button-svg-margin-block-end: 0;
   --footer-button-padding: 0;
   --dialog-padding: 30px;
   --dialog-svg_floppy-margin-block-end: 7px;
+}
+
+@media (width <= 375px) {
+
+  :root {
+    --footer-button-block-size: 82px;
+    --svg-floppy-size: 29px;
+    --footer__button-svg-margin-inline-end: 0;
+    --footer__button-svg-margin-block-end: 7px;
+    --footer-button-padding: 15px 18px;
+    --dialog-padding: 30px 42px;
+    --dialog-svg_floppy-margin-block-end: 0;
+  }
 }
