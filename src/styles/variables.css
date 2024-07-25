@@ -42,7 +42,6 @@
   --footer__button-svg-margin-block-end: 0;
   --footer-button-padding: 0;
   --dialog-padding: 30px;
-  --dialog-svg_floppy-margin-block-end: 7px;
 }
 
 @media (width <= 375px) {
@@ -54,6 +53,5 @@
     --footer__button-svg-margin-block-end: 7px;
     --footer-button-padding: 15px 18px;
     --dialog-padding: 30px 42px;
-    --dialog-svg_floppy-margin-block-end: 0;
   }
 }

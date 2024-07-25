@@ -14,10 +14,9 @@
 */
 
 .page {
-  block-size: 100vh;
+  min-block-size: 100vh;
   inline-size: 100%;
   min-inline-size: 320px;
-  min-block-size: 100dvb;
   background-attachment: fixed;
   background-image: var(--background-gradient);
   background-size: cover;
